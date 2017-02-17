@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="http://file.40017.cn/quyu/Public/eui/eui.css">
+    <link href="~/Content/Style/Amiba/index.css" rel="stylesheet" />
+    <link href="~/Content/Style/Amiba/index_form.css" rel="stylesheet" />
+    <link href="~/Content/Style/Amiba/index_table.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="eui-tab" id="costManageTab">
+        <ul class="eui-tab-btn-list">
+            <li>预算设置</li>
+            <li>成本设置</li>
+        </ul>
+        <div class="eui-tab-cont-list">
+            <div>
+                @Html.Partial("index_form")
+                @Html.Partial("index_table")
+            </div>
+        </div> 
+    </div>
+
+
+    <script src='/sell/common/Content/Script/jquery-1.11.2.min.js?_t=20170203112826747' type='text/javascript'></script>
+    <script src="/sell/common/Content/Plugins/usefulJs/createRoot.js"></script>
+    <script src='http://file.40017.cn/quyu/Public/eui/eui.js?_t=20170203112826747' type='text/javascript'></script>
+    <script src="/sell/common/Content/Script/Amiba/index.js"></script>
+    <script src="/sell/common/Content/Script/Amiba/index_form.js"></script>
+    <script src="/sell/common/Content/Script/Amiba/index_table.js"></script>
+</body>
+
+</html>
